@@ -1,43 +1,974 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Rakshya Agro</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Masthead-->
-        <header class="masthead bg-primary text-white text-center">
-            <div class="container d-flex align-items-center flex-column">
-                <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5" src="rakshya_agro.jpg" alt="..." />
-                <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0">Website Under Construction</h1>
-              
-            </div>
-        </header>
-        <!-- Copyright Section-->
-        <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; Rakshya Agro Industries</small></div>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Rakshya Agro Industries</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: "Public Sans", serif !important;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+
+    <style>
+        .mylist ul {
+            list-style-type: disc !important;
+            padding-left: 20px;
+            margin-left: 0;
+        }
+
+        .mylist li {
+            padding-top: 2px;
+            display: list-item !important;
+        }
+
+        .mylist ol {
+            display: block;
+            padding-left: 20px;
+            list-style-type: decimal !important;
+        }
+    </style>
+    <style>
+        .carttable {
+            border-collapse: collapse;
+            width: 100%;
+            text-align: left;
+        }
+
+        .carttable td {
+            border: none;
+            border-bottom: 1px solid #d3d3d3;
+            font-size: 1rem;
+        }
+
+        .carttable th {
+            border-bottom: 1px solid #d3d3d3;
+            padding: 0.5rem 0.2rem;
+            font-size: 1rem;
+        }
+    </style>
+    <link rel="shortcut icon" href="images/rakshya_agro.jpg">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+
+                    colors: {
+                        primary: '#023047',
+                        oldprimary: '#f3ab23',
+                        secondary: '#3939ac',
+                    }
+                },
+                screens: {
+                    'xs': '320px',
+                    'sm': '640px',
+                    'md': '768px',
+                    'lg': '1024px',
+                    'xl': '1280px',
+                    '2xl': '1536px',
+                    '1299px': '1299px',
+                },
+            }
+        }
+    </script>
+
+    <style>
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #555454;
+            border-radius: 3px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #555454;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: #e2dddf;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="">
+
+        <div class="sticky top-0  z-[888] bg-white shadow">
+            <header class='relative z-50 tracking-wide shadow-md '>
+
+
+                <ul
+                    class='flex flex-wrap items-center mx-auto max-w-screen-2xl justify-between gap-4 max-sm:px-4 px-10 py-4 bg-white min-h-[70px]'>
+
+
+
+                    <div class="flex items-center gap-x-2">
+
+                        <a href="index.html">
+                            <img src="images/rakshya_agro.jpg" alt="logo" class='w-[4.9rem] ' />
+                        </a>
+                        <marquee behavior="scroll" scrollamount="3" class="w-56 max-sm:w-56 max-lg:w-96 xl:w-80">
+                            <div
+                                class="px-1 text-2xl font-bold tracking-wider text-center text-green-700 max-sm:text-lg lg:text-xl xl:text-2xl ">
+                                Rakshya Agro Industries
+
+                            </div>
+                        </marquee>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                    <div id="collapseMenu"
+                        class='max-lg:hidden lg:!block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50 transition-all duration-500'>
+                        <button id="toggleClose"
+                            class='lg:hidden transition-all duration-500 fixed top-2 right-4 z-[100] rounded-full bg-white p-3'>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-black"
+                                viewBox="0 0 320.591 320.591">
+                                <path
+                                    d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.820 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+                                    data-original="#000000"></path>
+                                <path
+                                    d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.205-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.920-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+                                    data-original="#000000"></path>
+                            </svg>
+                        </button>
+
+                        <di
+                            class='lg:flex lg:gap-x-5 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50 transition-all duration-500'>
+                            <div class='hidden w-full mb-6 max-lg:block'>
+
+
+                                <div class="flex items-center ">
+                                    <div class="">
+                                        <a href="index.html"><img
+                                                src="images/rakshya_agro.jpg" alt="logo"
+                                                class='w-20' />
+                                        </a>
+                                    </div>
+
+
+                                    <div class="px-3 text-xl font-bold text-gray-800">Rakshya Agro Industries</div>
+                                </div>
+
+                            </div>
+                            <li class='px-3 max-lg:border-b max-lg:py-3'>
+                                <a href="index.html"
+                                    class='hover:text-green-500 text-[#333] block font-bold text-[17px]  text-green-500'>Home</a>
+                            </li>
+
+                            <li class='relative group max-lg:border-b max-lg:px-3 max-lg:py-3'>
+                                <a href='about.html'
+                                    class='hover:text-green-500 text-[#333] block font-bold text-[17px]'>About Us
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px"
+                                        class="inline-block ml-1" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
+                                            data-name="16" data-original="#000000" />
+                                    </svg>
+                                </a>
+                            </li>
+                            </li>
+
+                            <style>
+                                .hidden {
+                                    display: none;
+                                }
+
+                                .transition-all {
+                                    transition: all 0.3s ease-in-out;
+                                }
+                            </style>
+
+
+                            <div class="relative inline-block">
+                                <button id="category-btn"
+                                    class="flex hover:text-green-500 text-[#333] block font-bold text-[17px]">
+                                    Our Projects
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px"
+                                        class="inline-block ml-1 mt-1" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
+                                            data-name="16" data-original="#000000" />
+                                    </svg>
+                                </button>
+                                <div id="main-category-menu"
+                                    class="absolute left-0 hidden w-48 mt-2 transition-all bg-white rounded shadow-lg opacity-0">
+                                    <div class="relative group">
+                                        <a href="poutry-farming.html">
+                                            <button class="block w-full px-4 py-2 text-left hover:bg-gray-100">
+                                                Poultry farming
+                                            </button>
+                                        </a>
+                                        <div
+                                            class="absolute top-0 hidden w-48 mt-0 transition-all bg-white rounded shadow-lg opacity-0 left-full">
+                                        </div>
+                                    </div>
+                                    <div class="relative group">
+                                        <a href="crop-harvesting.html">
+                                            <button class="block w-full px-4 py-2 text-left hover:bg-gray-100">
+                                                Crop Harvesting
+                                            </button>
+                                        </a>
+                                        <div
+                                            class="absolute top-0 hidden w-48 mt-0 transition-all bg-white rounded shadow-lg opacity-0 left-full">
+                                        </div>
+                                    </div>
+                                    <div class="relative group">
+                                        <a href="buffalo-farming.html">
+                                            <button class="block w-full px-4 py-2 text-left hover:bg-gray-100">
+                                                Buffalo Farming (Upcoming)
+                                            </button>
+                                        </a>
+                                        <div
+                                            class="absolute top-0 hidden w-48 mt-0 transition-all bg-white rounded shadow-lg opacity-0 left-full">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <script>
+                                // Select buttons and menus
+                                const categoryBtn = document.getElementById('category-btn');
+                                const mainCategoryMenu = document.getElementById('main-category-menu');
+
+                                // Show main menu on hover over category button
+                                categoryBtn.addEventListener('mouseenter', () => {
+                                    mainCategoryMenu.classList.remove('hidden');
+                                    setTimeout(() => {
+                                        mainCategoryMenu.classList.remove('opacity-0');
+                                    }, 10);
+                                });
+
+                                categoryBtn.addEventListener('mouseleave', () => {
+                                    setTimeout(() => {
+                                        if (!mainCategoryMenu.matches(':hover')) {
+                                            mainCategoryMenu.classList.add('opacity-0');
+                                            setTimeout(() => {
+                                                mainCategoryMenu.classList.add('hidden');
+                                            }, 300);
+                                        }
+                                    }, 100);
+                                });
+
+                                // Show/hide submenus for main categories and subcategories
+                                function toggleSubmenuOnHover(elementBtn, submenu) {
+                                    elementBtn.addEventListener('mouseenter', () => {
+                                        submenu.classList.remove('hidden');
+                                        setTimeout(() => {
+                                            submenu.classList.remove('opacity-0');
+                                        }, 10);
+                                    });
+
+                                    elementBtn.addEventListener('mouseleave', () => {
+                                        setTimeout(() => {
+                                            if (!submenu.matches(':hover') && !elementBtn.matches(':hover')) {
+                                                submenu.classList.add('opacity-0');
+                                                setTimeout(() => {
+                                                    submenu.classList.add('hidden');
+                                                }, 300);
+                                            }
+                                        }, 100);
+                                    });
+                                }
+
+                                // Apply submenu behavior for each submenu
+                                document.querySelectorAll('.group').forEach(group => {
+                                    const submenu = group.querySelector('.transition-all');
+                                    const button = group.querySelector('button');
+                                    if (submenu && button) {
+                                        toggleSubmenuOnHover(button, submenu);
+                                    }
+                                });
+
+                                // Hide category menu if mouse leaves the entire area
+                                mainCategoryMenu.addEventListener('mouseleave', () => {
+                                    if (!mainCategoryMenu.matches(':hover')) {
+                                        mainCategoryMenu.classList.add('opacity-0');
+                                        setTimeout(() => {
+                                            mainCategoryMenu.classList.add('hidden');
+                                        }, 300);
+                                    }
+                                });
+                            </script>
+
+                            <li class='px-3 max-lg:border-b max-lg:py-3'><a
+                                    href=contact.html
+                                    class='hover:text-green-500 text-[#333] block font-bold text-[17px] '>Contact</a>
+                            </li>
+
+                        </di>
+                    </div>
+
+                    <div class='flex max-lg:ml-auto'>
+                        <button id="toggleOpen" class='lg:hidden'>
+                            <svg class="w-7 h-7" fill="#000" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 20a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </ul>
+            </header>
+
+
+
+            <script>
+                var toggleOpen = document.getElementById('toggleOpen');
+                var toggleClose = document.getElementById('toggleClose');
+                var collapseMenu = document.getElementById('collapseMenu');
+
+                function handleClick() {
+                    if (collapseMenu.style.display === 'block') {
+                        collapseMenu.style.display = 'none';
+                    } else {
+                        collapseMenu.style.display = 'block';
+                    }
+                }
+
+                toggleOpen.addEventListener('click', handleClick);
+                toggleClose.addEventListener('click', handleClick);
+            </script>
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
+
+        <div class="">
+            <!DOCTYPE html>
+            <html lang="en">
+
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Popup Loop Example</title>
+                <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+                <style>
+                    /* Custom styling for full-screen image popup */
+
+                    .swal2-popup {
+                        padding: 0 !important;
+                        /* Remove padding from the popup */
+                    }
+
+                    .swal2-image {
+                        width: 100% !important;
+                        height: 100% !important;
+                        object-fit: cover;
+                        /* Ensure the image fits the popup */
+                        border-radius: 0 !important;
+                        /* Remove rounded corners */
+                    }
+
+                    .swal2-actions {
+                        margin: 0 !important;
+                        /* Adjust button alignment */
+                    }
+                </style>
+            </head>
+
+            <body>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+
+                        // Dynamically generate image URLs from server-side data
+                        const imageUrls = [];
+
+                        // Determine the popup width based on screen size
+                        const screenWidth = window.innerWidth;
+                        let popupWidth = '59%';
+
+                        if (screenWidth <= 768) {
+                            popupWidth = '90%';
+                        }
+
+                        // Initialize the current popup index
+                        let currentPopup = 0;
+
+                        // Function to show the next popup
+                        function showPopup() {
+                            if (currentPopup >= imageUrls.length) {
+                                return; // Stop if all images have been shown
+                            }
+
+                            Swal.fire({
+                                imageUrl: imageUrls[currentPopup],
+                                imageWidth: '100%',
+                                /* Make image width 100% */
+                                imageHeight: '100%',
+                                /* Make image height 100% */
+                                confirmButtonText: "Next",
+                                confirmButtonColor: '#000000',
+                                /* Background color for the Next button */
+                                imageAlt: "Popup Image",
+                                showCloseButton: true,
+                                /* Show the default close button */
+                                width: popupWidth,
+                                customClass: {
+                                    popup: 'swal2-popup',
+                                    /* Apply custom popup styling */
+                                    image: 'swal2-image',
+                                    /* Apply custom image styling */
+                                    actions: 'swal2-actions' /* Adjust actions layout */
+                                }
+                            }).then(() => {
+                                currentPopup++;
+                                showPopup(); // Show the next popup
+                            });
+                        }
+
+                        // Start showing popups
+                        if (imageUrls.length > 0) {
+                            showPopup();
+                        } else {
+                            console.error("No images to display in popups.");
+                        }
+                    });
+                </script>
+            </body>
+
+            </html>
+
+            <!-- Demo styles -->
+            <style>
+                swiper-container {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                swiper-slide {
+                    text-align: center;
+                    font-size: 18px;
+                    background: #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                swiper-slide img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                .autoplay-progress {
+                    position: absolute;
+                    right: 16px;
+                    bottom: 16px;
+                    z-index: 10;
+                    width: 48px;
+                    height: 48px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-weight: bold;
+                    color: var(--swiper-theme-color);
+                }
+
+                .autoplay-progress svg {
+                    --progress: 0;
+                    position: absolute;
+                    left: 0;
+                    top: 0px;
+                    z-index: 10;
+                    width: 100%;
+                    height: 100%;
+                    stroke-width: 4px;
+                    stroke: var(--swiper-theme-color);
+                    fill: none;
+                    stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+                    stroke-dasharray: 125.6;
+                    transform: rotate(-90deg);
+                }
+            </style>
+
+            <!-- Swiper -->
+            <swiper-container class="mySwiper md:h-[70vh] lg:h-[100vh] object-contain" loop="true" pagination="true"
+                pagination-clickable="true" navigation="true" space-between="30" autoplay="false">
+
+                <swiper-slide>
+                    <img src="images/landing.jpg" alt="" class="">
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="images/landing_page_chicken.jpg" alt="" class="">
+                </swiper-slide>
+
+                <div class="autoplay-progress" slot="container-end">
+                    <svg viewBox="0 0 48 48">
+                        <circle cx="24" cy="24" r="20"></circle>
+                    </svg>
+                    <span></span>
+                </div>
+            </swiper-container>
+
+
+            <!-- Swiper JS -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+                const progressCircle = document.querySelector(".autoplay-progress svg");
+                const progressContent = document.querySelector(".autoplay-progress span");
+
+                const swiperEl = document.querySelector("swiper-container");
+                swiperEl.addEventListener("autoplaytimeleft", (e) => {
+                    const [swiper, time, progress] = e.detail;
+                    progressCircle.style.setProperty("--progress", 1 - progress);
+                    progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+                });
+            </script>
+
+
+
+
+
+
+            <div class="mx-auto my-10 max-w-screen-2xl ">
+                <div class="px-10 max-sm:px-4">
+                    <div class="flex flex-wrap items-center justify-between ">
+                        <h2 class="text-2xl font-bold text-left text-gray-800 max-sm:text-lg md:text-2xl slide-in-left">
+                            Our Projects
+                        </h2>
+                    </div>
+                    <div class="flex py-3">
+                        <div class="w-[10%] border border-[#f15a28]"></div>
+                        <div class="w-[90%] border"></div>
+                    </div>
+
+                </div>
+                <section class="relative z-10 overflow-hidden bg-white fade-up ">
+                    <div class="px-10 mx-auto max-w-screen-2xl">
+
+
+
+
+                        <div class="grid grid-cols-1 mt-3 sm:grid-cols-3 lg:grid-cols-4 gap-y-3 gap-x-6">
+                            <!-- item -->
+
+
+
+
+                            <a href="poutry-farming.html"
+                                class="text-decoration-none">
+
+
+
+                                <div class="group">
+
+
+                                    <div class="relative flex items-center justify-center w-full bg-gray-100 rounded">
+                                        <img src="images/poultry_farming.jpg"
+                                            alt=""
+                                            class="h-[40vh] max-sm:h-[60vh] object-contain max-w-full transition duration-500 ease-in-out group-hover:scale-110" />
+
+                                    </div>
+                                    <div class="px-1 py-6">
+                                        <div class="flex items-center justify-between">
+                                            <div>
+
+                                                <h6
+                                                    class="group-hover:text-[#7cb439] transition duration-500 ease-in-out text-gray-800 font-bold text-[17px]  mb-1">
+                                                    Poultry Farming
+                                                </h6>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                             <a href="crop-harvesting.html"
+                                class="text-decoration-none">
+
+
+
+                                <div class="group">
+
+
+                                    <div class="relative flex items-center justify-center w-full bg-gray-100 rounded">
+                                        <img src="images/Crop-harvesting.jpg"
+                                            alt=""
+                                            class="h-[40vh] max-sm:h-[60vh] object-contain max-w-full transition duration-500 ease-in-out group-hover:scale-110" />
+
+                                    </div>
+                                    <div class="px-1 py-6">
+                                        <div class="flex items-center justify-between">
+                                            <div>
+
+                                                <h6
+                                                    class="group-hover:text-[#7cb439] transition duration-500 ease-in-out text-gray-800 font-bold text-[17px]  mb-1">
+                                                    Crop Harvesting
+                                                </h6>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="buffalo-farming.html"
+                                class="text-decoration-none">
+
+
+
+                                <div class="group">
+
+
+                                    <div class="relative flex items-center justify-center w-full bg-gray-100 rounded">
+                                        <img src="images/Buffalo_farming.jpg"
+                                            alt=""
+                                            class="h-[40vh] max-sm:h-[60vh] object-contain max-w-full transition duration-500 ease-in-out group-hover:scale-110" />
+
+                                    </div>
+                                    <div class="px-1 py-6">
+                                        <div class="flex items-center justify-between">
+                                            <div>
+
+                                                <h6
+                                                    class="group-hover:text-[#7cb439] transition duration-500 ease-in-out text-gray-800 font-bold text-[17px]  mb-1">
+                                                    Buffalo Farming
+                                                </h6>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+
+                            <!-- <a href="https://sauryakrishicompany.com.np/service/fish-feed" class="text-decoration-none">
+
+
+
+                                <div class="group">
+
+
+                                    <div class="relative flex items-center justify-center w-full bg-gray-100 rounded">
+                                        <img src="https://sauryakrishicompany.com.np/uploads/service_k6HAjphc.jpg"
+                                            alt=""
+                                            class="h-[40vh] max-sm:h-[60vh] object-contain max-w-full transition duration-500 ease-in-out group-hover:scale-110" />
+
+                                    </div>
+                                    <div class="px-1 py-6">
+                                        <div class="flex items-center justify-between">
+                                            <div>
+
+                                                <h6
+                                                    class="group-hover:text-[#7cb439] transition duration-500 ease-in-out text-gray-800 font-bold text-[17px]  mb-1">
+                                                    FISH FEED
+                                                </h6>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a> -->
+
+
+                            <!-- <a href="https://sauryakrishicompany.com.np/service/rice" class="text-decoration-none">
+
+
+
+                                <div class="group">
+
+
+                                    <div class="relative flex items-center justify-center w-full bg-gray-100 rounded">
+                                        <img src="https://sauryakrishicompany.com.np/uploads/service_7J3A86fm.jpg"
+                                            alt=""
+                                            class="h-[40vh] max-sm:h-[60vh] object-contain max-w-full transition duration-500 ease-in-out group-hover:scale-110" />
+
+                                    </div>
+                                    <div class="px-1 py-6">
+                                        <div class="flex items-center justify-between">
+                                            <div>
+
+                                                <h6
+                                                    class="group-hover:text-[#7cb439] transition duration-500 ease-in-out text-gray-800 font-bold text-[17px]  mb-1">
+                                                    RICE
+                                                </h6>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a> -->
+
+
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+
+
+
+
+
+
+
+            <link rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+            <link rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+            <script>
+                $(document).ready(function () {
+                    $(".owl-carousel").owlCarousel({
+                        items: 1,
+                        margin: 10,
+                        autoplay: true,
+                        autoplayTimeout: 2000,
+                        loop: true,
+                        nav: false,
+                        dots: false,
+                        responsive: {
+                            640: {
+                                items: 2,
+                            },
+                            768: {
+                                items: 3,
+                            },
+                            1024: {
+                                items: 4,
+                            }
+                        }
+                    });
+                });
+            </script>
+
+            <div class="py-12 max-w-screen-2xl mx-auto ">
+
+                <div class="px-10 slide-in-left">
+                    <div class="flex justify-between gap-x-0 items-center  ">
+                        <h2
+                            class="max-sm:text-lg  text-2xl  text-primary text-left text-primary md:text-2xl font-semibold ">
+                            Message From Chairman
+                        </h2>
+                    </div>
+                    <div class="flex py-4">
+                        <div class="w-[10%] border border-[#ff2953]"></div>
+                        <div class="w-[90%] border"></div>
+                    </div>
+
+                </div>
+
+                <div class="grid md:grid-cols-3 items-center gap-12  p-8  transition-shadow duration-300 fade-up">
+                    <!-- Image Section with hover effect -->
+                    <div class="flex justify-center">
+                        <div class="relative">
+                            <div class="absolute -inset-2 bg-white rounded-lg blur opacity-25"></div>
+                            <img src="images/owner.jpg"
+                                class="relative w-[280px] h-[280px] object-cover rounded-lg shadow-lg"
+                                alt="Testimonial" />
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Content -->
+                    <div class="md:col-span-2 space-y-6">
+                        <!-- Quotation Icon -->
+                        <div class="mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-12 fill-black rotate-180 opacity-80"
+                                viewBox="0 0 475.082 475.081">
+                                <path
+                                    d="M164.454 36.547H54.818c-15.229 0-28.171 5.33-38.832 15.987C5.33 63.193 0 76.135 0 91.365v109.632c0 15.229 5.327 28.169 15.986 38.826 10.66 10.656 23.606 15.988 38.832 15.988h63.953c7.611 0 14.084 2.666 19.414 7.994 5.33 5.325 7.994 11.8 7.994 19.417v9.131c0 20.177-7.139 37.397-21.413 51.675-14.275 14.271-31.499 21.409-51.678 21.409h-18.27c-4.952 0-9.233 1.813-12.851 5.427-3.615 3.614-5.424 7.898-5.424 12.847v36.549c0 4.941 1.809 9.233 5.424 12.848 3.621 3.613 7.898 5.427 12.851 5.427h18.271c19.797 0 38.688-3.86 56.676-11.566 17.987-7.707 33.546-18.131 46.68-31.265 13.131-13.135 23.553-28.691 31.261-46.679 7.707-17.987 11.562-36.877 11.562-56.671V91.361c0-15.23-5.33-28.171-15.987-38.828s-23.602-15.986-38.827-15.986zm294.635 15.987c-10.656-10.657-23.599-15.987-38.828-15.987H310.629c-15.229 0-28.171 5.33-38.828 15.987-10.656 10.66-15.984 23.601-15.984 38.831v109.632c0 15.229 5.328 28.169 15.984 38.826 10.657 10.656 23.6 15.988 38.828 15.988h63.953c7.611 0 14.089 2.666 19.418 7.994 5.324 5.328 7.994 11.8 7.994 19.417v9.131c0 20.177-7.139 37.397-21.416 51.675-14.274 14.271-31.494 21.409-51.675 21.409h-18.274c-4.948 0-9.233 1.813-12.847 5.427-3.617 3.614-5.428 7.898-5.428 12.847v36.549c0 4.941 1.811 9.233 5.428 12.848 3.613 3.613 7.898 5.427 12.847 5.427h18.274c19.794 0 38.684-3.86 56.674-11.566 17.984-7.707 33.541-18.131 46.676-31.265 13.134-13.135 23.562-28.695 31.265-46.679 7.706-17.983 11.563-36.877 11.563-56.671V91.361c-.003-15.23-5.328-28.171-15.992-38.827z" />
+                            </svg>
+                        </div>
+
+                        <!-- Testimonial Text -->
+                        <div class="relative">
+                            <p class="text-gray-700 text-lg italic leading-relaxed">
+                            <p>Welcome to Rakshya Agro Industries. It is with immense pride and vision that I address you.
+Our journey is rooted in a profound commitment to sustainable and ethical agriculture, reflecting
+our deep respect for animal welfare, operational integrity, and unwavering dedication to
+customer satisfaction.</p>
+                            <p>At Rakshya Agro Industries, we see ourselves as more than just an agricultural company; we
+are a trusted partner in the food supply chain. Our holistic approach spans ethical animal
+rearing and processing to advanced crop management and preservation, ensuring the highest
+quality products for our valued customers.</p>
+                            <p>&nbsp;</p>
+                            <p>Our ongoing projects and commitments underscore our dedication to innovative technologies
+and sustainable practices, aiming to enhance efficiency and reduce our environmental footprint.
+With our expansion into buffalo farming and processing within an FMD-free zone, we are poised
+to serve both domestic and international markets, further solidifying our role in ensuring food
+security and supporting agricultural communities.</p>
+                            <p>We are committed to continuous improvement and strive to contribute to a sustainable and
+secure agricultural future for all stakeholders. Thank you for your interest in Rakshya Agro
+Industries. We look forward to building a healthier, more sustainable future together.</p>
+                            </p>
+                        </div>
+
+                        <!-- Author Information -->
+                        <div class="mt-8 border-l-4 border-black pl-4">
+                            <p class="text-gray-900 text-xl font-semibold">Yuktarth Aryal</p>
+                            <p class="text-gray-900 text-xl font-semibold">Chairman</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="">
+                <footer class="tracking-wide bg-black">
+                    <div class="px-6 mx-auto py-14 sm:px-10 max-w-screen-2xl">
+                        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-5">
+
+                            <div class="lg:col-span-2">
+                                <a href='index.html'>
+
+                                    <div class="mb-4 text-3xl font-bold text-white">Rakshya Agro Industries</div>
+                                </a>
+
+                                <p class="text-sm text-white">At Rakshya Agro Industries , we provide
+                                    high-quality, affordable feed to support healthy, productive, and profitable
+                                    farming. As a trusted partner, we deliver exceptional nutritional solutions,
+                                    empowering farmers
+                                    to thrive and build a sustainable future in agriculture and poultry farming</p>
+                            </div>
+
+                            <div>
+                                <h4 class="mb-8 text-lg font-semibold text-white">Quick Links</h4>
+                                <ul class="space-y-4">
+                                    <li><a href="index.html"
+                                            class="text-sm text-white hover:text-white">Home</a></li>
+                                    <li><a href="about.html"
+                                            class="text-sm text-white hover:text-white">About</a></li>
+
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h4 class="mb-8 text-lg font-semibold text-white">Projects</h4>
+                                <ul class="space-y-4">
+                                    <li><a href="poutry-farming.html" class="text-sm text-white hover:text-white">Poultry Farming</a></li>
+                                    <li><a href="crop-harvesting.html" class="text-sm text-white hover:text-white">Crop Harvesting</a></li>
+                                    <li><a href="buffalo-farming.html" class="text-sm text-white hover:text-white">Buffalo Farming (Upcoming)</a></li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h4 class="mb-8 text-lg font-semibold text-white">Contact Us</h4>
+                                <div class="space-y-4">
+                                    <p class="text-sm text-white">Factory : Baijanathpur,Biratnagar-19, Morang</p>
+                                    <p class="text-sm text-white">agrorakshya@gmail.com</p>
+                                    <p class="text-sm text-white">+977-9814306801, +977-9852071727, +977-9852029688</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </footer>
+            </div>
+
+        </div>
+</body>
+
 </html>
+
+
+
+
+<style>
+    .fade-up {
+        opacity: 0;
+        transform: translateY(100px);
+        /* Start a bit lower for more dramatic effect */
+        transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+    }
+
+    .fade-up.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+</style>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const divs = document.querySelectorAll(".fade-up");
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        // Delay each element for a staggered effect
+                        setTimeout(() => {
+                            entry.target.classList.add("active");
+                        }, 100); // Adjust delay as needed (100ms in this case)
+                    }
+                });
+            }, {
+            threshold: 0.2
+        } // Trigger when 20% of the element is visible
+        );
+
+        divs.forEach((div) => observer.observe(div));
+    });
+</script>
+
+
+
+<style>
+    .slide-in-left {
+        opacity: 0;
+        transform: translateX(-50px);
+        /* Start slightly to the left */
+        transition: opacity 0.8s ease-out, transform 0.6s ease-out;
+    }
+
+    .slide-in-left.active {
+        opacity: 1;
+        transform: translateX(0);
+        /* End at its original position */
+    }
+</style>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const elements = document.querySelectorAll(".slide-in-left");
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("active");
+                    }
+                });
+            }, {
+            threshold: 0.1
+        } // Trigger when 10% of the element is visible
+        );
+
+        elements.forEach((element) => observer.observe(element));
+    });
+</script>
